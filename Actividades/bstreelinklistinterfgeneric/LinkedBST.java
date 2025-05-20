@@ -37,7 +37,7 @@ public class LinkedBST<E extends Comparable<E>> implements BinarySearchTree<E> {
         this.root = null;
     }
 
-    // ✅ Método para insertar un elemento en el árbol
+    // Método para insertar un elemento en el árbol
     @Override
     public void insert(E data) throws ItemDuplicated {
         // Insertamos desde la raíz
@@ -67,7 +67,7 @@ public class LinkedBST<E extends Comparable<E>> implements BinarySearchTree<E> {
         return node; // Devolvemos el nodo con sus cambios
     }
 
-    // ✅ Método para buscar un elemento en el árbol
+    //  Método para buscar un elemento en el árbol
     @Override
     public E search(E data) throws ItemNoFound {
         Node result = searchRecursive(root, data); // Buscamos desde la raíz
@@ -95,7 +95,7 @@ public class LinkedBST<E extends Comparable<E>> implements BinarySearchTree<E> {
         }
     }
 
-    // ✅ Método para eliminar un dato del árbol
+    // Método para eliminar un dato del árbol
     @Override
     public void delete(E data) throws ExceptionIsEmpty {
         if (root == null) {
@@ -360,7 +360,7 @@ public class LinkedBST<E extends Comparable<E>> implements BinarySearchTree<E> {
             return 0; // Si el nivel no existe, devolvemos 0
         }
         ///EJERCICIO 2
-        // 🔹 MÉTODO A: Calcula el área del árbol (número de hojas × altura desde la raíz)
+        // MÉTODO A: Calcula el área del árbol (número de hojas × altura desde la raíz)
         public int areaBST() {
             if (root == null) return 0;
 
